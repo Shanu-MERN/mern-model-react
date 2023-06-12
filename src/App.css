@@ -1,0 +1,100 @@
+.Login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+.logo {
+  font-size: 3.8vw;
+  transition: 0.5s;
+}
+
+.left {
+  height: 100vh;
+  width: 70vw;
+  padding: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.info {
+  color: var(--ascent);
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.input-master {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-container label {
+  font-size: 0.8rem;
+}
+
+.input-container input {
+  border: none;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  background-color: #001d3d;
+}
+
+.input-container input:focus {
+  outline: 1px solid var(--ascent);
+}
+
+.button-container {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.button-container button {
+  background-color: #ffc300;
+  color: #001d3d;
+}
+
+.signup {
+  flex: 1;
+  max-width: 50%;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--ascent);
+  color: whitesmoke;
+  border-radius: 2rem;
+}
+
+.right {
+  height: 100vh;
+  width: 40vw;
+  padding: 3rem;
+}
+
+.container {
+  /* background: #003566; */
+  height: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  height: 60vh;
+}
