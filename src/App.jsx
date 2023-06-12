@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
 import bank from "./assets/bank.png";
+import "./App.css";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -11,14 +11,14 @@ function App() {
     photo: "",
   });
 
-  const handleCreate = async (e) => {
+  const handleCreate = (e) => {
     e.preventDefault();
     console.log(formData);
   };
 
   return (
     <div className="Login reg">
-      <form className="left" data-aos="fade-left" onSubmit={handleCreate}>
+      <form className="left" onSubmit={handleCreate}>
         <div className="info">Create A New Bank Account!</div>
         <div className="input-container">
           <label htmlFor="name">Name</label>
@@ -81,7 +81,7 @@ function App() {
           </button>
         </div>
       </form>
-      <div className="right" data-aos="zoom-in" data-aos-duration="600">
+      <div className="right">
         <div className="container">
           <img src={bank} alt="" />
         </div>
